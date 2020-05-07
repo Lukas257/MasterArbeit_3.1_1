@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.layout.AnchorPane?>
+        <?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="192.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fehlermeldungen.FehlerBBATableViewUmfassungsbauteileController">
+<children>
+    <Label layoutX="25.0" layoutY="25.0" prefHeight="34.0" prefWidth="206.0" text="Achtung!">
+        <font>
+            <Font name="Segoe UI Light" size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="25.0" layoutY="59.0" prefHeight="79.0" prefWidth="409.0" text="Bei geringen oder fehlenden horizontalen Wärmeabzugsöffnungen (ah ≤ 0.005) und vertikalen Wärmeabzugsflächen überwiegend in der unteren Raumhälfte darf als Av nur angesetzt werden:" wrapText="true">
+        <font>
+            <Font name="Segoe UI Light" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="25.0" layoutY="138.0" prefHeight="20.0" prefWidth="252.0" text="Av ≤ 2 · (Av,ob)       nach DIN 18230-1 (10)">
+        <font>
+            <Font name="Segoe UI Light" size="14.0" />
+        </font>
+    </Label>
+</children>
+</AnchorPane>

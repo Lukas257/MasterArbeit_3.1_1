@@ -1,0 +1,5 @@
+.tab-pane .tab {
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size: 14px;
+    -fx-border-radius: 0;
+}

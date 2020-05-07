@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Materialbibliothek.MaterialbibliothekController">
+   <content>
+      <AnchorPane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <TreeTableView fx:id="TreeTableViewMaterialbibliothek" layoutX="169.0" layoutY="124.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@MaterialbibliothekStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TreeTableColumn fx:id="TreeTableColumnStoff" editable="false" prefWidth="371.0" text="Stoff" />
+                  <TreeTableColumn fx:id="TreeTableColumnBeschreibung" editable="false" prefWidth="224.0" text="Beschreibung" />
+                  <TreeTableColumn fx:id="TreeTableColumnLagerungsdichte" editable="false" minWidth="0.0" prefWidth="198.0" text="Lagerungsdichte [%]" />
+                  <TreeTableColumn fx:id="TreeTableColumnAbbrandfaktor" editable="false" prefWidth="188.0" text="Abbrandfaktor [-]" />
+                <TreeTableColumn fx:id="TreeTableColumnHeizwert" editable="false" minWidth="0.0" prefWidth="216.0" text="Heizwert [kWh/kg]" />
+              </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

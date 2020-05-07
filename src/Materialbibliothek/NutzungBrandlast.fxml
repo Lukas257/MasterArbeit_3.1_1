@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Materialbibliothek.NutzungBrandlastController">
+   <content>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TreeTableView fx:id="TreeTableViewNutzungBrandlast" layoutX="22.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@MaterialbibliothekStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TreeTableColumn fx:id="TreeTableColumnNutzung" prefWidth="334.0" text="Nutzung" />
+                <TreeTableColumn fx:id="TreeTableColumnBrandlast" minWidth="0.0" prefWidth="265.0" text="Brandlast [kWh/m²]">
+                     <columns>
+                        <TreeTableColumn fx:id="TreeTableColumnBrandlast1" prefWidth="90.0" text="1." />
+                        <TreeTableColumn fx:id="TreeTableColumnBrandlast2" prefWidth="87.0" text="2." />
+                        <TreeTableColumn fx:id="TreeTableColumnBrandlast3" prefWidth="88.0" text="3." />
+                     </columns>
+                  </TreeTableColumn>
+              </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="125.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fehlermeldungen.FehlerBBATableViewUmfassungsbauteileController">
+    <children>
+        <Label layoutX="25.0" layoutY="25.0" prefHeight="34.0" prefWidth="206.0" text="Ein Fehler ist aufgetreten!">
+            <font>
+                <Font name="Segoe UI Light" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="59.0" prefHeight="20.0" prefWidth="189.0" text="βw &lt; 16">
+            <font>
+                <Font name="Segoe UI Light" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="85.0" prefHeight="20.0" prefWidth="252.0" text="Siehe DIN 18230 (13)">
+            <font>
+                <Font name="Segoe UI Light" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

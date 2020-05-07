@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="163.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fehlermeldungen.FehlerGrundflaecheMehrgeschossigController">
+    <children>
+        <Label layoutX="25.0" layoutY="25.0" prefHeight="34.0" prefWidth="206.0" text="Achtung!">
+            <font>
+                <Font name="Segoe UI Light" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="59.0" prefHeight="79.0" prefWidth="409.0" text="Das Rechenverfahren nach MIndBauRL Abschnitt 7 und DIN 18230-1 ist bei Brandbekämpfungsabschnitten mit mehreren Geschossen oder Ebenen auf eine maximale Fläche von 30.000m² begrenzt." wrapText="true">
+            <font>
+                <Font name="Segoe UI Light" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

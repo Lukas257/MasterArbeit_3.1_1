@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPaneMainWindow" hbarPolicy="NEVER" prefHeight="800.0" prefWidth="1200.0" vvalue="0.33" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindow.MainWindowController">
+   <content>
+      <AnchorPane fx:id="anchorPaneMainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5000.0" prefWidth="1200.0">
+         <children>
+            <VBox layoutY="-6.0" prefHeight="5000.0" prefWidth="1200.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+               <children>
+                  <AnchorPane prefHeight="294.0" prefWidth="1200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="53.0" layoutY="41.0" prefHeight="119.0" prefWidth="1095.0" text="Brandschutznachweis nach DIN 18230">
+                           <font>
+                              <Font name="Segoe UI" size="62.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="361.0" layoutY="196.0" prefHeight="156.0" prefWidth="478.0" text="Informationen über das Programm" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="243.0" prefWidth="1200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="435.0" prefHeight="72.0" prefWidth="333.0" text="Projektinformationen">
+                           <font>
+                              <Font name="Segoe UI Light" size="34.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="377.0" layoutY="86.0" prefHeight="142.0" prefWidth="448.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="197.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="251.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="79.0" prefWidth="290.0" text="Projektbezeichnung:">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="72.0" prefWidth="277.0" text="Projektnummer:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="81.0" prefWidth="272.0" text="Datum:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textFieldProjektbezeichnung" prefHeight="37.0" prefWidth="251.0" promptText="Projektbezeichnung" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="textFieldProjektnummer" prefHeight="38.0" prefWidth="251.0" promptText="Projektnummer" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="textFieldDatum" prefHeight="39.0" prefWidth="251.0" promptText="Datum" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="446.0" prefWidth="1200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="372.0" layoutY="14.0" prefHeight="58.0" prefWidth="457.0" text="Projektbeteiligte">
+                           <font>
+                              <Font name="Segoe UI Light" size="34.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="190.0" layoutY="92.0" prefHeight="320.0" prefWidth="821.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="NEVER" maxWidth="232.0" minWidth="0.0" prefWidth="150.0" />
+                            <ColumnConstraints hgrow="NEVER" maxWidth="472.0" minWidth="10.0" prefWidth="260.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="460.0" minWidth="10.0" prefWidth="150.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="371.0" minWidth="10.0" prefWidth="260.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Name:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Firma:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Straße:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="PLZ/Ort" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Telefon:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="E-Mail:" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Name:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Firma:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Straße:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="PLZ/Ort" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Telefon:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="E-Mail:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Bauherr" underline="true">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="117.0" prefWidth="348.0" text="Brandschutz" underline="true" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Segoe UI Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="textfieldBauherrName" prefHeight="39.0" prefWidth="212.0" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBauherrFirma" prefHeight="39.0" prefWidth="212.0" promptText="Firma" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBauherrStraße" prefHeight="39.0" prefWidth="212.0" promptText="Straße" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBauherrOrt" prefHeight="39.0" prefWidth="212.0" promptText="PLZ/Ort" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBauherrTelefon" prefHeight="39.0" prefWidth="212.0" promptText="Telefon" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBauherrEmail" prefHeight="39.0" prefWidth="212.0" promptText="E-Mail" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzName" prefHeight="39.0" prefWidth="212.0" promptText="Name" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzFirma" prefHeight="39.0" prefWidth="212.0" promptText="Firma" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzStraße" prefHeight="39.0" prefWidth="212.0" promptText="Straße" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzOrt" prefHeight="39.0" prefWidth="212.0" promptText="PLZ/Ort" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzTelefon" prefHeight="39.0" prefWidth="212.0" promptText="Telefon" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="textfieldBrandschutzEmail" prefHeight="39.0" prefWidth="212.0" promptText="E-Mail" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchorPaneTreeView" prefHeight="568.0" prefWidth="1200.0" />
+                  <AnchorPane prefHeight="747.0" prefWidth="1200.0">
+                     <children>
+                        <GridPane layoutX="352.0" layoutY="68.0" prefHeight="575.0" prefWidth="528.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="buttonErstellePDF" mnemonicParsing="false" onAction="#buttonErstellePDFClicked" text="Berechnung starten" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

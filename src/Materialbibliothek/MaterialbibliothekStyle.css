@@ -1,0 +1,11 @@
+.tree-table-view .column-header .label
+{
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: BOLD;
+    -fx-font-size: 15px;
+}
+
+.tree-table-row-cell{
+    -fx-font-family: "Segoe UI Light";
+    -fx-font-size: 14px;
+}
